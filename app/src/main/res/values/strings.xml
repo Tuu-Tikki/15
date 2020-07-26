@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">15</string>
+    <string name="stone_1">1</string>
+    <string name="stone_2">2</string>
+    <string name="stone_3">3</string>
+    <string name="stone_4">4</string>
+    <string name="stone_5">5</string>
+    <string name="stone_6">6</string>
+    <string name="stone_7">7</string>
+    <string name="stone_8">8</string>
+    <string name="stone_9">9</string>
+    <string name="stone_10">10</string>
+    <string name="stone_11">11</string>
+    <string name="stone_12">12</string>
+    <string name="stone_13">13</string>
+    <string name="stone_14">14</string>
+    <string name="stone_15">15</string>
+    <string name="empty"></string>
+</resources>
