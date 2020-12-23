@@ -18,7 +18,7 @@
         android:layout_marginRight="@dimen/margin_24"
         android:layout_marginBottom="@dimen/margin_24"
         android:background="@android:color/black"
-        android:padding="@dimen/stone_border"
+        android:padding="@dimen/field_border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +44,7 @@
                 android:height="@dimen/stone_size"
                 android:background="@color/colorAccent"
                 android:gravity="center"
-                android:text="@string/stone_1"
+                android:text=""
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -59,7 +59,7 @@
                 android:height="@dimen/stone_size"
                 android:background="@color/colorAccent"
                 android:gravity="center"
-                android:text="@string/stone_2"
+                android:text=""
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -74,7 +74,7 @@
                 android:height="@dimen/stone_size"
                 android:background="@color/colorAccent"
                 android:gravity="center"
-                android:text="@string/stone_3"
+                android:text=""
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -89,7 +89,7 @@
                 android:height="@dimen/stone_size"
                 android:background="@color/colorAccent"
                 android:gravity="center"
-                android:text="@string/stone_4"
+                android:text=""
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </TableRow>
@@ -101,7 +101,7 @@
             android:background="@android:color/background_light">
 
             <TextView
-                android:id="@+id/number_8"
+                android:id="@+id/number_5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_24"
@@ -111,22 +111,7 @@
                 android:height="@dimen/stone_size"
                 android:background="@color/colorAccent"
                 android:gravity="center"
-                android:text="@string/stone_8"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/number_7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_24"
-                android:layout_marginLeft="@dimen/margin_24"
-                android:layout_marginTop="@dimen/margin_24"
-                android:width="@dimen/stone_size"
-                android:height="@dimen/stone_size"
-                android:background="@color/colorAccent"
-                android:gravity="center"
-                android:text="@string/stone_7"
+                android:text=""
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -141,12 +126,12 @@
                 android:height="@dimen/stone_size"
                 android:background="@color/colorAccent"
                 android:gravity="center"
-                android:text="@string/stone_6"
+                android:text=""
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/number_5"
+                android:id="@+id/number_7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_24"
@@ -156,7 +141,22 @@
                 android:height="@dimen/stone_size"
                 android:background="@color/colorAccent"
                 android:gravity="center"
-                android:text="@string/stone_5"
+                android:text=""
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/number_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_24"
+                android:layout_marginLeft="@dimen/margin_24"
+                android:layout_marginTop="@dimen/margin_24"
+                android:width="@dimen/stone_size"
+                android:height="@dimen/stone_size"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text=""
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </TableRow>
@@ -178,7 +178,7 @@
                 android:height="@dimen/stone_size"
                 android:background="@color/colorAccent"
                 android:gravity="center"
-                android:text="@string/stone_9"
+                android:text=""
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -193,7 +193,7 @@
                 android:height="@dimen/stone_size"
                 android:background="@color/colorAccent"
                 android:gravity="center"
-                android:text="@string/stone_10"
+                android:text=""
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -208,7 +208,7 @@
                 android:height="@dimen/stone_size"
                 android:background="@color/colorAccent"
                 android:gravity="center"
-                android:text="@string/stone_11"
+                android:text=""
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -223,7 +223,7 @@
                 android:height="@dimen/stone_size"
                 android:background="@color/colorAccent"
                 android:gravity="center"
-                android:text="@string/stone_12"
+                android:text=""
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </TableRow>
@@ -246,7 +246,7 @@
                 android:height="@dimen/stone_size"
                 android:background="@color/colorAccent"
                 android:gravity="center"
-                android:text="@string/stone_13"
+                android:text=""
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -261,7 +261,7 @@
                 android:height="@dimen/stone_size"
                 android:background="@color/colorAccent"
                 android:gravity="center"
-                android:text="@string/stone_14"
+                android:text=""
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -276,12 +276,12 @@
                 android:height="@dimen/stone_size"
                 android:background="@color/colorAccent"
                 android:gravity="center"
-                android:text="@string/stone_15"
+                android:text=""
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/empty"
+                android:id="@+id/number_16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_24"

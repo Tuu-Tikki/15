@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="margin_24">24dp</dimen>
-    <dimen name="stone_size">48dp</dimen>
-    <dimen name="stone_border">4dp</dimen>
+    <dimen name="stone_size">48sp</dimen>
+    <dimen name="field_border">4sp</dimen>
 </resources>
