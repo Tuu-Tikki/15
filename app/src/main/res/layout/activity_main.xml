@@ -289,9 +289,9 @@
                 android:layout_marginTop="@dimen/margin_24"
                 android:width="@dimen/stone_size"
                 android:height="@dimen/stone_size"
-                android:background="@android:color/transparent"
+                android:background="@color/colorAccent"
                 android:gravity="center"
-                android:text="@string/empty"
+                android:text=""
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </TableRow>
