@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final int[] number = {R.integer.stone_1,  R.integer.stone_2,  R.integer.stone_3,  R.integer.stone_4,
+        final int[] stonesNumber = {R.integer.stone_1,  R.integer.stone_2,  R.integer.stone_3,  R.integer.stone_4,
                               R.integer.stone_5,  R.integer.stone_6,  R.integer.stone_7,  R.integer.stone_8,
                               R.integer.stone_9,  R.integer.stone_10, R.integer.stone_11, R.integer.stone_12,
                               R.integer.stone_13, R.integer.stone_14, R.integer.stone_15, R.integer.empty};
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         //set game field for the first  time
         for (int i=0; i < 16; i++) {
-            gameField[i].setText(number[i]);
+            gameField[i].setText(stonesNumber[i]);
         };
          gameField[15].setVisibility(View.INVISIBLE);
 
@@ -36,11 +36,10 @@ public class MainActivity extends AppCompatActivity {
             gameField[i].setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    int empty = checkNeighbor(counter, gameField);
+                    int empty = checkNeighbor(counter, gameField, stonesNumber);
                     if (empty > -1) {
-                        //int value = Integer.parseInt(gameField[counter].getText().toString());
                         CharSequence value = gameField[counter].getText();
-                        gameField[counter].setText("0");
+                        gameField[counter].setText(stonesNumber[15]);
                         gameField[counter].setVisibility(View.INVISIBLE);
                         gameField[empty].setText(value);
                         gameField[empty].setVisibility(View.VISIBLE);
@@ -50,28 +49,28 @@ public class MainActivity extends AppCompatActivity {
         };
     }
 
-    private int checkNeighbor (int i, TextView[] gameField) {
+    private int checkNeighbor (int i, TextView[] gameField, int[] stonesNumber) {
         int empty = -1;
-        if ( i - 4 > 0) {
-            if (Integer.parseInt(gameField[i-4].getText().toString()) == 0) {
+        if ( i - 4 > -1) {
+            if (Integer.parseInt(gameField[i-4].getText().toString()) == getResources().getInteger(stonesNumber[15])) {
                 empty = i - 4;
                 return empty;
             }
         }
-        if ( i - 1 > 0) {
-            if (Integer.parseInt(gameField[i-1].getText().toString()) == 0) {
+        if ( i - 1 > -1) {
+            if (Integer.parseInt(gameField[i-1].getText().toString()) == getResources().getInteger(stonesNumber[15])) {
                 empty = i - 1;
                 return empty;
             }
         }
         if ( i + 1 < 16) {
-            if (Integer.parseInt(gameField[i+1].getText().toString()) == 0) {
+            if (Integer.parseInt(gameField[i+1].getText().toString()) == getResources().getInteger(stonesNumber[15])) {
                 empty = i + 1;
                 return empty;
             }
         }
         if ( i + 4 < 16) {
-            if (Integer.parseInt(gameField[i+4].getText().toString()) == 0) {
+            if (Integer.parseInt(gameField[i+4].getText().toString()) == getResources().getInteger(stonesNumber[15])) {
                 empty = i + 4;
                 return empty;
             }
