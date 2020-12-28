@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -32,11 +34,12 @@ public class MainActivity extends AppCompatActivity {
         };
          gameField[15].setVisibility(View.INVISIBLE);
 
-         //check solvability (for test)
+         //shuffle (test)
         Button check = findViewById(R.id.checkButton);
         check.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                setGameField(gameField, stonesNumber);
                 boolean answer = checkSolvability(gameField, stonesNumber);
                 TextView showAnswer = findViewById(R.id.answer);
                 showAnswer.setText(String.valueOf(answer));
@@ -94,7 +97,29 @@ public class MainActivity extends AppCompatActivity {
 
     //shuffle the stones to start the game
     private void setGameField(TextView[] gameField, int[] stonesNumber) {
+        Random r = new Random();
+        int random = 0;
+        int empty = 0;
+        int[] values = new int[16];
 
+        do {
+            values = stonesNumber.clone();
+            for (int i = 0; i < 16; i++) {
+                random = r.nextInt(16 - i);
+                gameField[i].setText(values[random]);
+                for (int k = random; k < 15 - i; k++) {
+                    values[k] = values[k + 1];
+                }
+            }
+        } while (!checkSolvability(gameField, stonesNumber));
+
+        for (int i = 0; i < 16; i++) {
+            gameField[i].setVisibility(View.VISIBLE);
+        }
+        while(Integer.parseInt(gameField[empty].getText().toString()) != getResources().getInteger(stonesNumber[15])) {
+            empty++;
+        };
+        gameField[empty].setVisibility(View.INVISIBLE);
     }
 
     //to check if the stone set has a solve
